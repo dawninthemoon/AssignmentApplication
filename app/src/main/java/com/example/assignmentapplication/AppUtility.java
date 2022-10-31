@@ -5,4 +5,6 @@ public class AppUtility {
     public final static String UID_GUEST = "GUEST";
 
     public final static String UID_ID = "UID_";
+
+    public static String CUR_ID = "";
 }

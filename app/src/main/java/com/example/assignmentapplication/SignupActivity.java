@@ -74,6 +74,8 @@ public class SignupActivity extends Activity {
 
                 String infoStr = nameStr + "/" + phoneStr + "/" + addressStr;
 
+                AppUtility.CUR_ID = idStr;
+
                 infoEditor.putString(AppUtility.UID_ID + idStr, inputPW.getText().toString());
                 infoEditor.putString(AppUtility.USER_INFO_ID + "_" + idStr, infoStr);
                 infoEditor.commit();

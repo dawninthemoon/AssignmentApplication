@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
         Button signUpBtn = (Button) findViewById(R.id.btn_signup);
 
         SharedPreferences infoPreference = getSharedPreferences(AppUtility.USER_INFO_ID, MODE_PRIVATE);
-
         signInBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else {
                     Intent intent = new Intent(getApplicationContext(), ShopActivity.class);
-                    intent.putExtra("id", idInput.getText().toString());
+                    AppUtility.CUR_ID = idInput.getText().toString();
                     startActivity(intent);
                 }
             }
@@ -61,12 +60,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button directShopBtn = findViewById(R.id.btn_guest);
-        directShopBtn.setOnClickListener(new View.OnClickListener() {
+        Button guestBtn = findViewById(R.id.btn_guest);
+        guestBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), ShopActivity.class);
-                intent.putExtra("id", AppUtility.UID_GUEST);
+                AppUtility.CUR_ID = AppUtility.UID_GUEST;
                 startActivity(intent);
             }
         });

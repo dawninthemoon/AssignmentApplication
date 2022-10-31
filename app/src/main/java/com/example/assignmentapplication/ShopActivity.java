@@ -19,14 +19,12 @@ public class ShopActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shop);
 
-        Intent intent = getIntent();
         Button userInfoButton = findViewById(R.id.btn_userInfo);
-        String uid = intent.getStringExtra("id");
-
         SharedPreferences userInfo = getSharedPreferences(AppUtility.USER_INFO_ID, MODE_PRIVATE);
         userInfoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String uid = AppUtility.CUR_ID;
                 if (uid.equals(AppUtility.UID_GUEST)) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(ShopActivity.this);
                     builder.setTitle("Register");
