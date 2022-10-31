@@ -18,6 +18,8 @@ public class AppUtility {
 프레퍼런스를 통한 데이터 관리를 할 때, ID를 손쉽게 관리하기 위해 만들어둔 상수와 전역변수이다.
 
 ##  첫 번째 화면
+![image1](./img1.png)
+
 ### activity_main.xml
 ```
 <LinearLayout ...
@@ -121,6 +123,8 @@ guestBtn.setOnClickListener(new View.OnClickListener() {
 ```
 
 ## 두 번째 화면
+![image2](./img2.png)
+
 ### activity_signup.xml
 ```
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"...>  
@@ -251,7 +255,50 @@ finish();
 회원가입이 끝나면 finish()를 통해 현재 액티비티를 마친다.
 
 ## 세 번째 화면
+![image3](./img3.png)
+
 ### activity_shop.xml
+```
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+  xmlns:app="http://schemas.android.com/apk/res-auto"  
+  xmlns:tools="http://schemas.android.com/tools"  
+  ...>  
+ <ScrollView  android:id="@+id/shopView"
+  app:layout_constraintTop_toTopOf="parent"
+  ...>
+```
+
+기본적으로 ConstraintLayout과 ScrollView를 사용한다. 상품 페이지에 있는 상품 정보가 지금은 5개이지만, 추가가 필요할 때 동적으로 스크롤을 늘릴 수도 있고, 5개만으로 화면의 정보가 꽉 차기 때문에 스크롤뷰를 사용했다.
+
+```
+<LinearLayout  
+  android:layout_width="match_parent"  
+  android:layout_height="match_parent"  
+  android:orientation="vertical">  
+  
+ <LinearLayout  ...
+  android:orientation="vertical">  
+  
+ <TextView  android:layout_width="match_parent"
+  ...
+  android:text="제품명: darkglass b7k">  
+ </TextView>  
+ <ImageView  android:layout_width="match_parent"  
+  ...
+  android:src="@drawable/darkglass">  
+ </ImageView>  
+ <TextView  android:layout_width="match_parent"  
+  ...
+  android:text="가격: 570,000원">  
+ </TextView> 
+ </LinearLayout>  
+ <LinearLayout
+  ...
+ </LinearLayout>
+</LinearLayout>
+```
+
+그 아래로는 LinearLayout이 안에 들어가는 큰 LinearLayout을 기본으로, 텍스트와 이미지가 안에 들어가는 LinearLayout이 있다.
 ### ShopActivity.java
 ```
 public class ShopActivity extends Activity {  
