@@ -18,7 +18,7 @@ public class AppUtility {
 프레퍼런스를 통한 데이터 관리를 할 때, ID를 손쉽게 관리하기 위해 만들어둔 상수와 전역변수이다.
 
 ##  첫 번째 화면
-![image1](./img/img1.png)
+![image1](./img/img1.PNG)
 
 ### activity_main.xml
 ```
