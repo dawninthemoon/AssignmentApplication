@@ -18,7 +18,7 @@ public class AppUtility {
 프레퍼런스를 통한 데이터 관리를 할 때, ID를 손쉽게 관리하기 위해 만들어둔 상수와 전역변수이다.
 
 ##  첫 번째 화면
-![image1](./img1.png)
+![image1](./img/img1.png)
 
 ### activity_main.xml
 ```
@@ -123,7 +123,7 @@ guestBtn.setOnClickListener(new View.OnClickListener() {
 ```
 
 ## 두 번째 화면
-![image2](./img2.png)
+![image2](./img/img2.png)
 
 ### activity_signup.xml
 ```
@@ -255,7 +255,7 @@ finish();
 회원가입이 끝나면 finish()를 통해 현재 액티비티를 마친다.
 
 ## 세 번째 화면
-![image3](./img3.png)
+![image3](./img/img3.png)
 
 ### activity_shop.xml
 ```
