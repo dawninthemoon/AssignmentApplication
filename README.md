@@ -123,7 +123,7 @@ guestBtn.setOnClickListener(new View.OnClickListener() {
 ```
 
 ## 두 번째 화면
-![image2](./img/img2.png)
+![image2](./img/img2.PNG)
 
 ### activity_signup.xml
 ```
@@ -255,7 +255,7 @@ finish();
 회원가입이 끝나면 finish()를 통해 현재 액티비티를 마친다.
 
 ## 세 번째 화면
-![image3](./img/img3.png)
+![image3](./img/img3.PNG)
 
 ### activity_shop.xml
 ```
