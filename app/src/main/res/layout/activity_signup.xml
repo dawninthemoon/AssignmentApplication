@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <EditText
+        android:id="@+id/input_signup_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:hint="아이디">
+    </EditText>
+    <EditText
+        android:id="@+id/input_signup_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호">
+    </EditText>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="비밀번호는 영어, 숫자, 특수문자를 포함하고, 8자에서 20자 사이어야 합니다.">
+    </TextView>
+    <EditText
+        android:layout_marginTop="36dp"
+        android:id="@+id/input_signup_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="이름">
+    </EditText>
+    <EditText
+        android:id="@+id/input_signup_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="전화번호">
+    </EditText>
+    <EditText
+        android:id="@+id/input_signup_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="주소">
+    </EditText>
+    <TextView
+        android:layout_marginTop="60dp"
+        android:id="@+id/txt_terms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:text="이용자 식별자 및 제공된 개인정보는 이용자 식별, 통계, 계정 연동 및 CS 등을 위해 서비스 이용기간 동안 활용/보관됩니다. 본 제공 동의를 거부할 권리가 있으나, 동의를 거부하실 경우 서비스 이용이 제한될 수 있습니다."
+        >
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/radio_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="동의">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/radio_disagree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="미동의">
+            </RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_signup_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:layout_gravity="center">
+    </Button>
+
+</LinearLayout>
